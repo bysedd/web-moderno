@@ -4,7 +4,7 @@ global.b = 123;
 
 this.c = 456;
 this.d = false;
-this.e = 'Teste';
+this.e = "Teste";
 
 console.log(a);
 console.log(global.b);
@@ -17,4 +17,4 @@ console.log(module.exports);
 abc = 3; // don't do this at home!
 console.log(global.abc);
 
-// module.exports = { e: 456, f: false, g: 'Teste' }
+// module.exports = { e: 456, f: false, g: "Teste" };
