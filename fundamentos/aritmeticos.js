@@ -1,4 +1,4 @@
-let [a, b, c, d] = [3, 5, 1, 15];
+let [ a, b, c, d ] = [ 3, 5, 1, 15 ];
 
 // binary operator
 const sum = a + b + c + d;

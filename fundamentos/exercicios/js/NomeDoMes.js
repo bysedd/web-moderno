@@ -1,7 +1,7 @@
 function nomeDoMes(numero) {
     const meses = [
         'janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho',
-        'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro',
+        'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'
     ];
     return meses[--numero];
 }

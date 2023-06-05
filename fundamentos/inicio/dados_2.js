@@ -6,11 +6,11 @@ let finalPrice = price * (1 - discount);
 // console.log(`Discount price: ${finalPrice.toFixed(2)}`);
 
 let product = {
-    "name": "Pencil",
-    "category": "Stationery",
-    "price": price,
-    "discount": discount,
-}
+    'name': 'Pencil',
+    'category': 'Stationery',
+    'price': price,
+    'discount': discount
+};
 for (const k in product) {
     console.log(`${k}: ${product[k]}`);
 }

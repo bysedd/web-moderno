@@ -4,5 +4,5 @@ function receberSomenteOsParesDeIndicesPares(array) {
     });
 }
 
-console.log(receberSomenteOsParesDeIndicesPares([1, 2, 3, 4]));
-console.log(receberSomenteOsParesDeIndicesPares([10, 70, 22, 43]));
+console.log(receberSomenteOsParesDeIndicesPares([ 1, 2, 3, 4 ]));
+console.log(receberSomenteOsParesDeIndicesPares([ 10, 70, 22, 43 ]));

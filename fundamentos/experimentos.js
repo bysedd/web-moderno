@@ -4,7 +4,7 @@ global.b = 123;
 
 this.c = 456;
 this.d = false;
-this.e = "Teste";
+this.e = 'Teste';
 
 console.log(a);
 console.log(global.b);

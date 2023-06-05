@@ -1,9 +1,9 @@
 const people = {
-    "name": "Ana",
-    "age": 5,
-    "address": {
-        "street": "Rua ABC",
-        "number": 1000
+    'name': 'Ana',
+    'age': 5,
+    'address': {
+        'street': 'Rua ABC',
+        'number': 1000
     }
 };
 

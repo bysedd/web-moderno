@@ -3,5 +3,5 @@ function calcularMedia(array) {
     return totalNotas / array.length;
 }
 
-console.log(calcularMedia([0, 10]));
-console.log(calcularMedia([1, 2, 3, 4, 5]));
+console.log(calcularMedia([ 0, 10 ]));
+console.log(calcularMedia([ 1, 2, 3, 4, 5 ]));

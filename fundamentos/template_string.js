@@ -1,4 +1,4 @@
-let name = "Rebeca";
+let name = 'Rebeca';
 const template = `
     Hi
     ${name}!
@@ -12,4 +12,4 @@ console.log(`1 + 1 = ${1 + 1}`);
 const print = text => console.log(text);
 const upper = text => text.toUpperCase();
 
-print(`Hey... ${upper("cuidado")}!`);
+print(`Hey... ${upper('cuidado')}!`);

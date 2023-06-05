@@ -2,7 +2,7 @@
     {
         {
             {
-                var sera = "Será???"; // var é global
+                var sera = 'Será???'; // var é global
                 console.log(sera);
             }
         }

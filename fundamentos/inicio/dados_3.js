@@ -7,5 +7,5 @@ console.log(typeof salary);
 let isRaining = true;
 console.log(typeof isRaining);
 
-let name = "Felippe";
+let name = 'Felippe';
 console.log(typeof name);

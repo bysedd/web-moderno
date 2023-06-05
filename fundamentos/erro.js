@@ -8,13 +8,13 @@ function handleErrorLaunched(e) {
  */
 function printName(obj) {
     try {
-        console.log(obj.name.toUpperCase() + "!!!");
+        console.log(obj.name.toUpperCase() + '!!!');
     } catch (e) {
         handleErrorLaunched(e);
     } finally {
-        console.log("End");
+        console.log('End');
     }
 }
 
-const obj = { name: "Roberto" };
+const obj = { name: 'Roberto' };
 printName(obj);

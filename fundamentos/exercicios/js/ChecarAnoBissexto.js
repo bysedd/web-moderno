@@ -1,12 +1,12 @@
 function checarAnoBissexto(ano) {
     if (ano <= 0) {
-        return false
+        return false;
     } else if (ano % 400 === 0) {
-        return true
+        return true;
     } else if (ano % 100 === 0) {
-        return false
+        return false;
     } else return ano % 4 === 0;
 }
 
-console.log(checarAnoBissexto(2020))
-console.log(checarAnoBissexto(2100))
+console.log(checarAnoBissexto(2020));
+console.log(checarAnoBissexto(2100));

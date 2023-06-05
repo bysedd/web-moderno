@@ -20,12 +20,12 @@ console.log(subtraction2(2, 3));
 
 // Function with only one parameter
 const print = a => console.log(a);
-print("Cool!!!");
+print('Cool!!!');
 
 // Function without parameters
-const print2 = () => console.log("Cool!!!");
+const print2 = () => console.log('Cool!!!');
 print2();
 
 // Function with more than one parameter
 const print3 = (a, b, c) => console.log(a, b, c);
-print3("Cool!!!", "Cool!!!", "Cool!!!");
+print3('Cool!!!', 'Cool!!!', 'Cool!!!');

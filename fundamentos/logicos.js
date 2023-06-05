@@ -11,7 +11,7 @@ function shopping(work1, work2) {
     // const buyTv32 = !buyTv50;
     const buyTv32 = work1 !== work2;
     const healthy = !buyIceCream; // unary operator
-    
+
     return { buyIceCream, buyTv50, buyTv32, healthy };
 }
 

@@ -8,5 +8,5 @@ function buscarPalavrasSemelhantes(buscarPalavra, arrayPalavras) {
     return resultado;
 }
 
-console.log(buscarPalavrasSemelhantes("pro", ["programação", "mobile", "profissional"]));
-console.log(buscarPalavrasSemelhantes("python", ["javascript", "java", "c++"]));
+console.log(buscarPalavrasSemelhantes('pro', [ 'programação', 'mobile', 'profissional' ]));
+console.log(buscarPalavrasSemelhantes('python', [ 'javascript', 'java', 'c++' ]));

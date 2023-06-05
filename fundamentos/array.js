@@ -1,4 +1,4 @@
-const values = [7.7, 8.9, 6.3, 9.2];
+const values = [ 7.7, 8.9, 6.3, 9.2 ];
 console.log(values[0], values[3]);
 console.log(values[4]);
 
