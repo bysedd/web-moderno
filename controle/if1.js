@@ -24,5 +24,5 @@ seForVerdadeEuFalo(-1); // true
 seForVerdadeEuFalo(' '); // true
 seForVerdadeEuFalo('?'); // true
 seForVerdadeEuFalo([]); // true
-seForVerdadeEuFalo([1, 2]); // true
+seForVerdadeEuFalo([ 1, 2 ]); // true
 seForVerdadeEuFalo({}); // true

@@ -1,19 +1,19 @@
 /*
-    Exibir no console os números pares e ímpares de 1 a 10
-    
-    // Bloco 1
-    1
-    3
-    5
-    7
-    9
-    
-    // Bloco 2
-    2
-    4
-    6
-    8
-    10
+ Exibir no console os números pares e ímpares de 1 a 10
+ 
+ // Bloco 1
+ 1
+ 3
+ 5
+ 7
+ 9
+ 
+ // Bloco 2
+ 2
+ 4
+ 6
+ 8
+ 10
  */
 
 {

@@ -6,12 +6,12 @@ function shopping(work1, work2) {
      * 4. work1 or work2 = stay healthy
      */
     const buyIceCream = work1 || work2;
-    const buyTv50 = work1 && work2;
+    const buyTv50     = work1 && work2;
     // const buyTv32 = !!(work1 ^ work2) // bitwise xor
     // const buyTv32 = !buyTv50;
     const buyTv32 = work1 !== work2;
     const healthy = !buyIceCream; // unary operator
-
+    
     return { buyIceCream, buyTv50, buyTv32, healthy };
 }
 

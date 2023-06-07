@@ -1,4 +1,4 @@
-let price = 19.90;
+let price    = 19.90;
 let discount = 0.4;
 // console.log(`Discount price: ${price * (1 - discount)}`);
 

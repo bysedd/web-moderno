@@ -1,5 +1,5 @@
 function receberMelhorEstudante(obj) {
-    let maiorMedia = 0;
+    let maiorMedia      = 0;
     let melhorEstudante = '';
     for (let estudante in obj) {
         let media = 0;
@@ -8,7 +8,7 @@ function receberMelhorEstudante(obj) {
         }
         media /= obj[estudante].length;
         if (media > maiorMedia) {
-            maiorMedia = media;
+            maiorMedia      = media;
             melhorEstudante = estudante;
         }
     }

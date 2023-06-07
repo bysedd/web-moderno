@@ -5,7 +5,7 @@ let b = 4;
 console.log(a, b);
 
 var a = 30;
-b = 40; // 'let' não permite redeclarar a variável
+b     = 40; // 'let' não permite redeclarar a variável
 console.log(a, b);
 
 a = 300;

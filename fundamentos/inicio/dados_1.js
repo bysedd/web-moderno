@@ -1,7 +1,7 @@
-let nome = 'Caneta';
+let nome       = 'Caneta';
 let quantidade = 10;
-let price = 6.4;
-let imposto = 1.5;
+let price      = 6.4;
+let imposto    = 1.5;
 let finalPrice = price + imposto;
 
 console.log(`Produto: ${nome}`);

@@ -1,7 +1,7 @@
 console.log(Math.ceil(6.1));
 
 const obj1 = {};
-obj1.name = 'Ball';
+obj1.name  = 'Ball';
 // obj1["name"] = "Ball";
 console.log(obj1.name);
 

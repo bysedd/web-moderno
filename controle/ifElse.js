@@ -5,8 +5,7 @@ const imprimirResultado = function (nota) {
         } else {
             console.log('Reprovado!');
         }
-    }
-    else {
+    } else {
         console.log(`'${nota}' não é um número válido!`);
     }
 };
