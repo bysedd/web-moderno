@@ -1,6 +1,6 @@
-var number = 1;
+var number = 1
 {
-    var number = 2;
-    console.log('inside =', number);
+  var number = 2
+  console.log('inside =', number)
 }
-console.log('outside =', number);
+console.log('outside =', number)

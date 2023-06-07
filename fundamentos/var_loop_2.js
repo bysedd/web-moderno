@@ -1,11 +1,11 @@
-const func = [];
+const func = []
 
 for (var i = 0; i < 10; i++) {
-    func.push(() => console.log(i));
+  func.push(() => console.log(i))
 }
 
-func[2]();
-func[8]();
+func[2]()
+func[8]()
 
 // The result is 10, 10, because the variable 'i' is global and the function
 // func[2] and func[8] are closures that refer to the global variable 'i'.

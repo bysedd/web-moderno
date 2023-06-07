@@ -1,6 +1,6 @@
-console.log(typeof Object);
+console.log(typeof Object)
 
 class Product {
 }
 
-console.log(typeof Product);
+console.log(typeof Product)

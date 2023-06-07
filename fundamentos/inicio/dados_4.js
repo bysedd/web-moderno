@@ -1,9 +1,9 @@
-const a = 3;
+const a = 3
 
 try {
-    a += 10;
+  a += 10
 } catch (TypeError) {
-    console.log('\'a\' is a constant and cannot be changed.');
+  console.log('\'a\' is a constant and cannot be changed.')
 }
 
-console.log(a);
+console.log(a)
