@@ -1,0 +1,50 @@
+<h1>Projeto</h1>
+<ul class="tree">
+    <li class="folder" onclick="toggleFolder(this)">backend
+        <ul>
+            <li class="folder" onclick="toggleFolder(this)">app
+                <ul>
+                    <li>produto.js</li>
+                    <li>categoria.js</li>
+                    <li>venda.js</li>
+                </ul>
+            </li>
+            <li class="folder" onclick="toggleFolder(this)">config
+                <ul>
+                    <li>banco.js</li>
+                    <li>rotas.js</li>
+                    <li>servidor.js</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li class="folder" onclick="toggleFolder(this)">
+        frontend
+        <ul>
+            <li class="folder" onclick="toggleFolder(this)">
+                public
+                <ul>
+                    <li>app.css</li>
+                    <li>app.js</li>
+                    <li>index.html</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<link href="http://files.cod3r.com.br/curso-web/tree.css" rel="stylesheet">
+<script>
+    function toggleFolder (folder) {
+        const subFolders = folder.getElementsByTagName('ul')[0]
+        subFolders.style.display = subFolders.style.display === 'none' ? 'block' : 'none'
+    }
+
+    const fileItems = document.querySelectorAll('.folder li')
+    console.log(fileItems)
+    fileItems.forEach(function (item) {
+        item.addEventListener('click', function (event) {
+            event.stopPropagation()
+        })
+    })
+</script>
