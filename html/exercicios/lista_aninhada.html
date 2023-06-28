@@ -1,15 +1,18 @@
 <h1>Projeto</h1>
 <ul class="tree">
-    <li class="folder" onclick="toggleFolder(this)">backend
+    <li>
+        <span class="folder">backend</span>
         <ul>
-            <li class="folder" onclick="toggleFolder(this)">app
+            <li>
+                <span class="folder">app</span>
                 <ul>
                     <li>produto.js</li>
                     <li>categoria.js</li>
                     <li>venda.js</li>
                 </ul>
             </li>
-            <li class="folder" onclick="toggleFolder(this)">config
+            <li>
+                <span class="folder">config</span>
                 <ul>
                     <li>banco.js</li>
                     <li>rotas.js</li>
@@ -18,11 +21,11 @@
             </li>
         </ul>
     </li>
-    <li class="folder" onclick="toggleFolder(this)">
-        frontend
+    <li>
+        <span class="folder">frontend</span>
         <ul>
-            <li class="folder" onclick="toggleFolder(this)">
-                public
+            <li>
+                <span class="folder">public</span>
                 <ul>
                     <li>app.css</li>
                     <li>app.js</li>
@@ -35,15 +38,11 @@
 
 <link href="http://files.cod3r.com.br/curso-web/tree.css" rel="stylesheet">
 <script>
-    function toggleFolder (folder) {
-        const subFolders = folder.getElementsByTagName('ul')[0]
-        subFolders.style.display = subFolders.style.display === 'none' ? 'block' : 'none'
-    }
-
-    const fileItems = document.querySelectorAll('.folder li')
-    fileItems.forEach(function (item) {
-        item.addEventListener('click', function (event) {
-            event.stopPropagation()
-        })
+    document.querySelectorAll('.folder').forEach(elemento => {
+        elemento.onclick = _ => {
+            const ul = elemento.nextElementSibling
+            const display = ul.style.display
+            ul.style.display = display === 'none' ? 'block' : 'none'
+        }
     })
 </script>
