@@ -1,0 +1,120 @@
+<meta charset='UTF-8'>
+
+<h1>Formulário</h1>
+
+<form action="http://localhost:8080/usuarios" method="post">
+    <input name="id" type="hidden" value="3">
+
+    <label for="nome">Nome</label>
+    <input id="nome" name="nome" type="text">
+
+    <label for="senha">Senha</label>
+    <input id="senha" name="senha" type="password">
+
+    <label for="bio">Bio</label>
+    <textarea cols="30" id="bio" name="bio" rows="10"></textarea>
+
+    <div>
+        <input id="m" name="sexo" type="radio" value="m">
+        <label for="m">Masculino</label>
+
+        <input id="f" name="sexo" type="radio" value="f">
+        <label for="f">Feminino</label>
+    </div>
+
+    <div>
+        <label for="ativo"></label>
+        <input id="ativo" name="ativo" type="checkbox"> Ativo
+    </div>
+
+    <label>
+        <select name="estado">
+            <option value="">Selecione...</option>
+            <option value="sp">São Paulo</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="mg">Minas Gerais</option>
+            <option value="es">Espírito Santo</option>
+        </select>
+    </label>
+
+    <label for="interesses">Interesses:</label>
+    <select id="interesses" multiple name="interesses[]" size="5">
+        <option value="js">JavaScript</option>
+        <option value="php">PHP</option>
+        <option value="java">Java</option>
+        <option value="c#">C#</option>
+        <option value="python">Python</option>
+    </select>
+
+
+    <button formaction="http://localhost:8080/usuarios">Enviar</button>
+    <button formaction="http://localhost:8080/usuarios/3">Alterar</button>
+</form>
+
+<style>
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+
+    form label {
+        margin-bottom: 5px;
+    }
+
+    form input[type="text"],
+    form input[type="password"],
+    form textarea, form select,
+    form input[type="radio"],
+    form input[type="checkbox"] {
+        margin-bottom: 10px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    button {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #ccc;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+
+    textarea {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    select {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+</style>
+
+<script>
+    const select = document.getElementById('interesses')
+    let lastIndex = -1
+
+    select.addEventListener('mousedown', (event) => {
+        event.preventDefault()
+
+        const clickedOption = event.target
+        clickedOption.selected = !clickedOption.selected
+
+        if (event.shiftKey && lastIndex !== -1) {
+            const minIndex = Math.min(clickedOption.index, lastIndex)
+            const maxIndex = Math.max(clickedOption.index, lastIndex)
+
+            Array.from(select.options).forEach((option, index) => {
+                option.selected = index >= minIndex && index <= maxIndex
+            })
+        }
+
+        lastIndex = clickedOption.index
+    })
+</script>
